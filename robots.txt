@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://moviezone2026.github.io/movie-website/sitemap.xml
+
