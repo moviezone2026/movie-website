@@ -300,3 +300,17 @@ footer {
 
 }
 ```
+.trailer-btn {
+    display: inline-block;
+    margin: 12px 15px 0;
+    padding: 10px 16px;
+    background: #e50914;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.trailer-btn:hover {
+    background: #b20710;
+}
