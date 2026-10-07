@@ -1,102 +1,789 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="google-site-verification" content="vFZQ8pDAq_0scRMqq7oDGvEkuZ1IgPHk-J3Owjq73sw">
+
+<meta
+  name="google-site-verification"
+  content="vFZQ8pDAq_0scRMqq7oDGvEkuZ1IgPHk-J3Owjq73sw"
+>
+
 <title>MovieZone - Movies, Trailers & Movie Details</title>
-<meta name="description" content="MovieZone helps you discover movies, official trailers, movie details, ratings, cast, genres and release information.">
-<meta name="keywords" content="movies, movie trailers, movie details, new movies, upcoming movies, MovieZone">
+
+<meta
+  name="description"
+  content="MovieZone helps you discover movies, official trailers, movie details, ratings, cast, genres and release information."
+>
+
+<meta
+  name="keywords"
+  content="movies, movie trailers, movie details, new movies, upcoming movies, MovieZone"
+>
+
 <meta name="robots" content="index, follow">
+
 <link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>
+
+<!-- =========================
+     HEADER
+========================= -->
+
 <header class="site-header">
+
   <div class="nav-wrap">
-    <a class="brand" href="index.html">🎬 <span>MovieZone</span></a>
+
+    <a class="brand" href="index.html">
+      🎬 <span>MovieZone</span>
+    </a>
+
     <nav>
-      <a href="#latest">Latest</a><a href="#upcoming">Upcoming</a><a href="#popular">Popular</a>
+      <a href="#latest">Latest</a>
+      <a href="#upcoming">Upcoming</a>
+      <a href="#popular">Popular</a>
     </nav>
+
   </div>
+
+
+  <!-- HERO -->
+
   <div class="hero">
+
     <div class="hero-copy">
-      <span class="eyebrow">MOVIE DISCOVERY • TRAILERS • DETAILS</span>
-      <h1>Find your next movie.</h1>
-      <p>Explore movies, official trailers, ratings, cast, genres and release information in one clean place.</p>
-      <div class="search-wrap"><span>⌕</span><input id="searchInput" type="search" placeholder="Search movies, genres or years..." aria-label="Search movies"></div>
+
+      <span class="eyebrow">
+        MOVIE DISCOVERY • TRAILERS • DETAILS
+      </span>
+
+      <h1>
+        Find your next movie.
+      </h1>
+
+      <p>
+        Explore movies, official trailers, ratings, cast,
+        genres and release information in one clean place.
+      </p>
+
+
+      <!-- SEARCH -->
+
+      <div class="search-wrap">
+
+        <span>⌕</span>
+
+        <input
+          id="searchInput"
+          type="search"
+          placeholder="Search movies, genres or years..."
+          aria-label="Search movies"
+        >
+
+      </div>
+
     </div>
+
   </div>
+
 </header>
 
-<section class="filter-bar" aria-label="Movie filters">
-  <button class="filter-btn active" data-filter="all">All</button>
-  <button class="filter-btn" data-filter="Action">Action</button>
-  <button class="filter-btn" data-filter="Adventure">Adventure</button>
-  <button class="filter-btn" data-filter="Animation">Animation</button>
-  <button class="filter-btn" data-filter="Drama">Drama</button>
-  <button class="filter-btn" data-filter="Science Fiction">Sci-Fi</button>
-  <button class="filter-btn" data-filter="Horror">Horror</button>
-  <button class="filter-btn" data-filter="Upcoming">Upcoming</button>
+
+
+<!-- =========================
+     FILTER BAR
+========================= -->
+
+<section
+  class="filter-bar"
+  aria-label="Movie filters"
+>
+
+  <button
+    class="filter-btn active"
+    data-filter="all"
+  >
+    All
+  </button>
+
+
+  <button
+    class="filter-btn"
+    data-filter="Action"
+  >
+    Action
+  </button>
+
+
+  <button
+    class="filter-btn"
+    data-filter="Adventure"
+  >
+    Adventure
+  </button>
+
+
+  <button
+    class="filter-btn"
+    data-filter="Animation"
+  >
+    Animation
+  </button>
+
+
+  <button
+    class="filter-btn"
+    data-filter="Drama"
+  >
+    Drama
+  </button>
+
+
+  <button
+    class="filter-btn"
+    data-filter="Science Fiction"
+  >
+    Sci-Fi
+  </button>
+
+
+  <button
+    class="filter-btn"
+    data-filter="Horror"
+  >
+    Horror
+  </button>
+
+
+  <button
+    class="filter-btn"
+    data-filter="Upcoming"
+  >
+    Upcoming
+  </button>
+
 </section>
 
+
+
+<!-- =========================
+     ADSTERRA
+========================= -->
+
 <div class="ad-wrap">
+
   <!-- Adsterra Native Banner -->
-  <script async="async" data-cfasync="false" src="https://pl31574370.profitableratecpmnetwork.com/95614deb5812074f49ea3d6d10241241/invoke.js"></script>
-  <div id="container-95614deb5812074f49ea3d6d10241241"></div>
+
+  <script
+    async="async"
+    data-cfasync="false"
+    src="https://pl31574370.profitableratecpmnetwork.com/95614deb5812074f49ea3d6d10241241/invoke.js">
+  </script>
+
+  <div
+    id="container-95614deb5812074f49ea3d6d10241241">
+  </div>
+
 </div>
 
+
+
+<!-- =========================
+     MAIN CONTENT
+========================= -->
+
 <main>
-  <section class="movie-section" id="latest"><div class="section-heading"><div><span class="section-kicker">NEW & FEATURED</span><h2>🔥 Latest Movies</h2></div><span class="section-count" id="latestCount"></span></div><div function card(m) {
+
+
+  <!-- =========================
+       LATEST
+  ========================= -->
+
+  <section
+    class="movie-section"
+    id="latest"
+  >
+
+    <div class="section-heading">
+
+      <div>
+
+        <span class="section-kicker">
+          NEW & FEATURED
+        </span>
+
+        <h2>
+          🔥 Latest Movies
+        </h2>
+
+      </div>
+
+      <span
+        class="section-count"
+        id="latestCount"
+      ></span>
+
+    </div>
+
+
+    <div
+      class="movie-grid"
+      id="latestGrid"
+    ></div>
+
+  </section>
+
+
+
+  <!-- =========================
+       UPCOMING
+  ========================= -->
+
+  <section
+    class="movie-section"
+    id="upcoming"
+  >
+
+    <div class="section-heading">
+
+      <div>
+
+        <span class="section-kicker">
+          COMING SOON
+        </span>
+
+        <h2>
+          🎬 Upcoming Movies
+        </h2>
+
+      </div>
+
+      <span
+        class="section-count"
+        id="upcomingCount"
+      ></span>
+
+    </div>
+
+
+    <div
+      class="movie-grid"
+      id="upcomingGrid"
+    ></div>
+
+  </section>
+
+
+
+  <!-- =========================
+       POPULAR
+  ========================= -->
+
+  <section
+    class="movie-section"
+    id="popular"
+  >
+
+    <div class="section-heading">
+
+      <div>
+
+        <span class="section-kicker">
+          FAN FAVOURITES
+        </span>
+
+        <h2>
+          ⭐ Popular & Classics
+        </h2>
+
+      </div>
+
+      <span
+        class="section-count"
+        id="popularCount"
+      ></span>
+
+    </div>
+
+
+    <div
+      class="movie-grid"
+      id="popularGrid"
+    ></div>
+
+  </section>
+
+
+
+  <!-- =========================
+       NO RESULTS
+  ========================= -->
+
+  <p
+    id="noResults"
+    class="no-results"
+    hidden
+  >
+    No movies match your search.
+  </p>
+
+
+</main>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+  <div class="footer-inner">
+
+    <div>
+
+      <strong>
+        🎬 MovieZone
+      </strong>
+
+      <p>
+        Movies • Trailers • Details
+      </p>
+
+    </div>
+
+
+    <div class="footer-links">
+
+      <a href="about.html">
+        About
+      </a>
+
+      <a href="contact.html">
+        Contact
+      </a>
+
+      <a href="privacy.html">
+        Privacy
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <p class="copyright">
+    © 2026 MovieZone. All rights reserved.
+  </p>
+
+</footer>
+
+
+
+<!-- =========================
+     MOVIE DATABASE
+========================= -->
+
+<script src="movies.js"></script>
+
+
+
+<!-- =========================
+     MOVIE SYSTEM
+========================= -->
+
+<script>
+
+const movies = window.MOVIES || [];
+
+
+/* =========================
+   ELEMENTS
+========================= */
+
+const grids = {
+
+  latest:
+    document.getElementById("latestGrid"),
+
+  upcoming:
+    document.getElementById("upcomingGrid"),
+
+  popular:
+    document.getElementById("popularGrid")
+
+};
+
+
+const counts = {
+
+  latest:
+    document.getElementById("latestCount"),
+
+  upcoming:
+    document.getElementById("upcomingCount"),
+
+  popular:
+    document.getElementById("popularCount")
+
+};
+
+
+const sections = {
+
+  latest:
+    document.getElementById("latest"),
+
+  upcoming:
+    document.getElementById("upcoming"),
+
+  popular:
+    document.getElementById("popular")
+
+};
+
+
+const searchInput =
+  document.getElementById("searchInput");
+
+
+const noResults =
+  document.getElementById("noResults");
+
+
+/* =========================
+   FILTER STATE
+========================= */
+
+let filter = "all";
+
+let query = "";
+
+
+
+/* =========================
+   MOVIE CARD
+========================= */
+
+function card(m) {
+
+  /*
+    If Trailer and Official Source
+    are the same URL, only Trailer
+    button will be shown.
+  */
+
   const sourceButton =
-    m.s && m.s !== m.tr
-      ? `<a class="btn source" href="${m.s}" target="_blank" rel="noopener noreferrer">Official Source</a>`
-      : '';
+    m.s &&
+    m.s !== m.tr
+      ? `
+        <a
+          class="btn source"
+          href="${m.s}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Official Source
+        </a>
+      `
+      : "";
+
 
   return `
-    <article class="movie-card"
-      data-categories="${m.c}"
-      data-title="${m.t.toLowerCase()} ${m.y}">
+
+    <article
+      class="movie-card"
+      data-categories="${m.c || ""}"
+      data-title="${(
+        m.t +
+        " " +
+        m.y +
+        " " +
+        m.g
+      ).toLowerCase()}"
+    >
+
 
       <img
         loading="lazy"
         src="${m.p}"
         alt="${m.t} poster"
-        onerror="this.classList.add('img-error')">
+        onerror="this.classList.add('img-error')"
+      >
+
 
       <div class="card-body">
 
-        <span class="year-badge">${m.y}</span>
 
-        <h3>${m.t}</h3>
+        <span class="year-badge">
+          ${m.y}
+        </span>
 
-        <p>${m.g}</p>
+
+        <h3>
+          ${m.t}
+        </h3>
+
+
+        <p>
+          ${m.g}
+        </p>
+
 
         <div class="card-actions">
 
-          <a class="btn primary" href="${m.d}">
+
+          <a
+            class="btn primary"
+            href="${m.d}"
+          >
             View Details
           </a>
 
-          <a
-            class="btn secondary"
-            href="${m.tr}"
-            target="_blank"
-            rel="noopener noreferrer">
-            ▶ Trailer
-          </a>
+
+          ${
+            m.tr
+              ? `
+                <a
+                  class="btn secondary"
+                  href="${m.tr}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  ▶ Trailer
+                </a>
+              `
+              : ""
+          }
+
 
           ${sourceButton}
 
+
         </div>
 
+
       </div>
+
     </article>
+
   `;
+
 }
-function render(){let visible=0; for(const sec of ['latest','upcoming','popular']){const arr=movies.filter(m=>m.sec===sec && (filter==='all'||m.c.includes(filter)) && (!query || (m.t+' '+m.y+' '+m.g).toLowerCase().includes(query))); grids[sec].innerHTML=arr.map(card).join(''); counts[sec].textContent=`${arr.length} title${arr.length===1?'':'s'}`; document.getElementById(sec).hidden=arr.length===0; visible+=arr.length;} document.getElementById('noResults').hidden=visible!==0;}
-document.querySelectorAll('.filter-btn').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filter-btn').forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;render();}));
-document.getElementById('searchInput').addEventListener('input',e=>{query=e.target.value.trim().toLowerCase();render();});
+
+
+
+/* =========================
+   CHECK FILTER
+========================= */
+
+function matchesFilter(movie) {
+
+  if (filter === "all") {
+    return true;
+  }
+
+
+  /* Upcoming filter */
+
+  if (filter === "Upcoming") {
+    return movie.sec === "upcoming";
+  }
+
+
+  /* Genre filters */
+
+  return (
+    movie.c &&
+    movie.c
+      .toLowerCase()
+      .includes(filter.toLowerCase())
+  );
+
+}
+
+
+
+/* =========================
+   SEARCH CHECK
+========================= */
+
+function matchesSearch(movie) {
+
+  if (!query) {
+    return true;
+  }
+
+
+  const searchableText = (
+
+    movie.t +
+    " " +
+    movie.y +
+    " " +
+    movie.g +
+    " " +
+    movie.c
+
+  ).toLowerCase();
+
+
+  return searchableText.includes(query);
+
+}
+
+
+
+/* =========================
+   RENDER MOVIES
+========================= */
+
+function render() {
+
+  let visible = 0;
+
+
+  const sectionNames = [
+    "latest",
+    "upcoming",
+    "popular"
+  ];
+
+
+  sectionNames.forEach(sec => {
+
+
+    const filteredMovies =
+      movies.filter(movie => {
+
+        return (
+          movie.sec === sec &&
+          matchesFilter(movie) &&
+          matchesSearch(movie)
+        );
+
+      });
+
+
+    /* Render cards */
+
+    grids[sec].innerHTML =
+      filteredMovies
+        .map(card)
+        .join("");
+
+
+    /* Count */
+
+    counts[sec].textContent =
+      `${filteredMovies.length} title${
+        filteredMovies.length === 1
+          ? ""
+          : "s"
+      }`;
+
+
+    /* Hide empty section */
+
+    sections[sec].hidden =
+      filteredMovies.length === 0;
+
+
+    visible +=
+      filteredMovies.length;
+
+  });
+
+
+  /* No results */
+
+  noResults.hidden =
+    visible !== 0;
+
+}
+
+
+
+/* =========================
+   FILTER BUTTONS
+========================= */
+
+document
+  .querySelectorAll(".filter-btn")
+  .forEach(button => {
+
+
+    button.addEventListener(
+      "click",
+      () => {
+
+
+        /* Remove active */
+
+        document
+          .querySelectorAll(".filter-btn")
+          .forEach(btn => {
+
+            btn.classList.remove("active");
+
+          });
+
+
+        /* Add active */
+
+        button.classList.add("active");
+
+
+        /* Set filter */
+
+        filter =
+          button.dataset.filter;
+
+
+        /* Render */
+
+        render();
+
+
+      }
+    );
+
+  });
+
+
+
+/* =========================
+   SEARCH
+========================= */
+
+searchInput.addEventListener(
+  "input",
+  event => {
+
+    query =
+      event.target.value
+        .trim()
+        .toLowerCase();
+
+
+    render();
+
+  }
+);
+
+
+
+/* =========================
+   INITIAL LOAD
+========================= */
+
 render();
+
 </script>
+
 </body>
 </html>
