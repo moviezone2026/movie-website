@@ -46,30 +46,53 @@
 </div>
 
 <main>
-  <section class="movie-section" id="latest"><div class="section-heading"><div><span class="section-kicker">NEW & FEATURED</span><h2>🔥 Latest Movies</h2></div><span class="section-count" id="latestCount"></span></div><div class="movie-grid" id="latestGrid"></div></section>
-  <section class="movie-section" id="upcoming"><div class="section-heading"><div><span class="section-kicker">COMING SOON</span><h2>🎬 Upcoming Movies</h2></div><span class="section-count" id="upcomingCount"></span></div><div class="movie-grid" id="upcomingGrid"></div></section>
-  <section class="movie-section" id="popular"><div class="section-heading"><div><span class="section-kicker">FAN FAVOURITES</span><h2>⭐ Popular & Classics</h2></div><span class="section-count" id="popularCount"></span></div><div class="movie-grid" id="popularGrid"></div></section>
-  <p id="noResults" class="no-results" hidden>No movies match your search.</p>
-</main>
+  <section class="movie-section" id="latest"><div class="section-heading"><div><span class="section-kicker">NEW & FEATURED</span><h2>🔥 Latest Movies</h2></div><span class="section-count" id="latestCount"></span></div><div function card(m) {
+  const sourceButton =
+    m.s && m.s !== m.tr
+      ? `<a class="btn source" href="${m.s}" target="_blank" rel="noopener noreferrer">Official Source</a>`
+      : '';
 
-<footer>
-  <div class="footer-inner">
-    <div><strong>🎬 MovieZone</strong><p>Movies • Trailers • Details</p></div>
-    <div class="footer-links"><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a></div>
-  </div>
-  <p class="copyright">© 2026 MovieZone. All rights reserved.</p>
-</footer>
+  return `
+    <article class="movie-card"
+      data-categories="${m.c}"
+      data-title="${m.t.toLowerCase()} ${m.y}">
 
-<script src="movies.js"></script>
-<script>
-const movies = window.MOVIES;
+      <img
+        loading="lazy"
+        src="${m.p}"
+        alt="${m.t} poster"
+        onerror="this.classList.add('img-error')">
 
-const grids={latest:document.getElementById('latestGrid'),upcoming:document.getElementById('upcomingGrid'),popular:document.getElementById('popularGrid')};
-const counts={latest:document.getElementById('latestCount'),upcoming:document.getElementById('upcomingCount'),popular:document.getElementById('popularCount')};
-let filter='all', query='';
-function card(m){return `<article class="movie-card" data-categories="${m.c}" data-title="${m.t.toLowerCase()} ${m.y}">
-<img loading="lazy" src="${m.p}" alt="${m.t} poster" onerror="this.classList.add('img-error')">
-<div class="card-body"><span class="year-badge">${m.y}</span><h3>${m.t}</h3><p>${m.g}</p><div class="card-actions"><a class="btn primary" href="${m.d}">View Details</a><a class="btn secondary" href="${m.tr}" target="_blank" rel="noopener noreferrer">▶ Trailer</a><a class="btn source" href="${m.s}" target="_blank" rel="noopener noreferrer">Official Source</a></div></div></article>`}
+      <div class="card-body">
+
+        <span class="year-badge">${m.y}</span>
+
+        <h3>${m.t}</h3>
+
+        <p>${m.g}</p>
+
+        <div class="card-actions">
+
+          <a class="btn primary" href="${m.d}">
+            View Details
+          </a>
+
+          <a
+            class="btn secondary"
+            href="${m.tr}"
+            target="_blank"
+            rel="noopener noreferrer">
+            ▶ Trailer
+          </a>
+
+          ${sourceButton}
+
+        </div>
+
+      </div>
+    </article>
+  `;
+}
 function render(){let visible=0; for(const sec of ['latest','upcoming','popular']){const arr=movies.filter(m=>m.sec===sec && (filter==='all'||m.c.includes(filter)) && (!query || (m.t+' '+m.y+' '+m.g).toLowerCase().includes(query))); grids[sec].innerHTML=arr.map(card).join(''); counts[sec].textContent=`${arr.length} title${arr.length===1?'':'s'}`; document.getElementById(sec).hidden=arr.length===0; visible+=arr.length;} document.getElementById('noResults').hidden=visible!==0;}
 document.querySelectorAll('.filter-btn').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filter-btn').forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;render();}));
 document.getElementById('searchInput').addEventListener('input',e=>{query=e.target.value.trim().toLowerCase();render();});
