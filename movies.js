@@ -184,8 +184,8 @@ window.MOVIES = [
   c: 'Upcoming Animation',
   p: 'angry-birds-movie-3.jpg',
   d: 'angry-birds-movie-3.html',
-  tr: 'https://www.youtube.com/watch?v=a9DB_aUMzME',
-  s: 'https://www.youtube.com/watch?v=a9DB_aUMzME',
+  tr: 'https://www.youtube.com/watch?v=n1DBDfavlQo',
+  s: 'https://www.youtube.com/watch?v=n1DBDfavlQo',
   sec: 'upcoming'
 },
 
