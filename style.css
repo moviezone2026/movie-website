@@ -576,6 +576,38 @@ footer{
 
 }
 
+.related-movies {
+  margin: 30px auto;
+  padding: 18px;
+  max-width: 900px;
+  background: #1b1b1b;
+  border-radius: 10px;
+}
+
+.related-movies h2 {
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.related-movies ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 22px;
+  padding-left: 20px;
+}
+
+.related-movies a {
+  color: #8ecbff;
+  text-decoration: none;
+}
+
+.related-movies a:hover {
+  text-decoration: underline;
+}
+
+
+
+
 /* =========================
    SMALL MOBILE
 ========================= */
