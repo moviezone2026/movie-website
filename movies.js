@@ -374,8 +374,7 @@ window.MOVIES = [
   sec: 'popular'
 },
 
-{t:'Klara and the Sun',y:2026,g:'Science Fiction / Drama',c:'Upcoming Drama Science Fiction',p:'klara-and-the-sun-poster.svg',d:'klara-and-the-sun.html',tr:'https://www.youtube.com/results?search_query=Klara+and+the+Sun+2026+official+trailer',s:'https://www.google.com/search?q=Klara+and+the+Sun+2026+official+film',rd:'October 23, 2026',sec:'upcoming'},
-
+{t:'Klara and the Sun',y:2026,g:'Science Fiction / Drama',c:'Upcoming Drama Science Fiction',p:'klara-and-the-sun-poster.svg',d:'klara-and-the-sun.html',tr:'https://www.youtube.com/results?search_query=Klara+and+the+Sun+2026+official+trailer',s:'https://www.google.com/search?q=Klara+and+the+Sun+2026+official+film',rd:'October 23, 2026',sec:'upcoming'}
    
 
 ];
