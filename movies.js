@@ -385,6 +385,24 @@ window.MOVIES = [
   tr: 'https://www.youtube.com/results?search_query=Klara+and+the+Sun+2026+official+trailer',
   rd: 'October 23, 2026',
   sec: 'upcoming'
-}
+},
+
+{t:'Wildwood',y:2026,g:'Animation / Fantasy',c:'Upcoming Animation',p:'wildwood-poster.svg',d:'wildwood.html',tr:'https://www.youtube.com/results?search_query=Wildwood+2026+official+trailer',s:'https://www.google.com/search?q=Wildwood+2026+official+film',rd:'October 23, 2026',sec:'upcoming'},
+{t:'The Cat in the Hat',y:2026,g:'Animation / Family',c:'Upcoming Animation',p:'the-cat-in-the-hat-poster.svg',d:'the-cat-in-the-hat.html',tr:'https://www.youtube.com/results?search_query=The+Cat+in+the+Hat+2026+official+trailer',s:'https://www.warnerbros.com/movies/cat-hat',rd:'November 6, 2026',sec:'upcoming'},
+{t:'Godzilla Minus Zero',y:2026,g:'Action / Science Fiction',c:'Upcoming Action Science Fiction',p:'godzilla-minus-zero-poster.svg',d:'godzilla-minus-zero.html',tr:'https://www.youtube.com/results?search_query=Godzilla+Minus+Zero+official+trailer',s:'https://www.google.com/search?q=Godzilla+Minus+Zero+official+movie',rd:'November 6, 2026',sec:'upcoming'},
+{t:'Wild Horse Nine',y:2026,g:'Drama / Thriller',c:'Upcoming Drama',p:'wild-horse-nine-poster.svg',d:'wild-horse-nine.html',tr:'https://www.youtube.com/results?search_query=Wild+Horse+Nine+2026+official+trailer',s:'https://www.google.com/search?q=Wild+Horse+Nine+2026+official+film',rd:'November 6, 2026',sec:'upcoming'},
+{t:'Ebenezer: A Christmas Carol',y:2026,g:'Fantasy / Drama',c:'Upcoming Drama',p:'ebenezer-poster.svg',d:'ebenezer.html',tr:'https://www.youtube.com/results?search_query=Ebenezer+2026+official+trailer',s:'https://www.paramount.com/movies/ebenezer',rd:'November 13, 2026',sec:'upcoming'},
+{t:'How to Rob a Bank',y:2026,g:'Crime / Thriller',c:'Upcoming',p:'how-to-rob-a-bank-poster.svg',d:'how-to-rob-a-bank.html',tr:'https://www.youtube.com/results?search_query=How+to+Rob+a+Bank+2026+official+trailer',s:'https://www.google.com/search?q=How+to+Rob+a+Bank+2026+official+movie',rd:'November 13, 2026',sec:'upcoming'},
+{t:'Victorian Psycho',y:2026,g:'Horror / Thriller',c:'Upcoming Horror',p:'victorian-psycho-poster.svg',d:'victorian-psycho.html',tr:'https://www.youtube.com/results?search_query=Victorian+Psycho+2026+official+trailer',s:'https://www.google.com/search?q=Victorian+Psycho+2026+official+film',rd:'November 13, 2026',sec:'upcoming'},
+{t:'I Play Rocky',y:2026,g:'Biography / Sport',c:'Upcoming Biography Sport',p:'i-play-rocky-poster.svg',d:'i-play-rocky.html',tr:'https://www.youtube.com/results?search_query=I+Play+Rocky+2026+official+trailer',s:'https://www.google.com/search?q=I+Play+Rocky+2026+official+movie',rd:'November 13, 2026',sec:'upcoming'},
+{t:'Paper Tiger',y:2026,g:'Crime / Drama',c:'Upcoming Crime Drama',p:'paper-tiger-poster.svg',d:'paper-tiger.html',tr:'https://www.youtube.com/results?search_query=Paper+Tiger+2026+official+trailer',s:'https://www.google.com/search?q=Paper+Tiger+2026+official+movie',rd:'November 13, 2026',sec:'upcoming'},
+{t:'Focker-in-Law',y:2026,g:'Comedy',c:'Upcoming',p:'focker-in-law-poster.svg',d:'focker-in-law.html',tr:'https://www.youtube.com/results?search_query=Focker-in-Law+2026+official+trailer',s:'https://www.google.com/search?q=Focker-in-Law+2026+official+movie',rd:'November 25, 2026',sec:'upcoming'},
+{t:'Hexed',y:2026,g:'Animation / Fantasy',c:'Upcoming Animation',p:'hexed-poster.svg',d:'hexed.html',tr:'https://www.youtube.com/results?search_query=Hexed+2026+official+trailer',s:'https://www.google.com/search?q=Hexed+2026+official+movie',rd:'November 25, 2026',sec:'upcoming'}
+
+
+   
+
+
+   
 
 ];
