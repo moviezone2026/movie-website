@@ -482,13 +482,13 @@ window.MOVIES = [
    {
    t:'I Play Rocky',
    y:2026,
-      g:'Biography / Sport',
-      c:'Upcoming Biography Sport',
-      p:'i-play-rocky-poster.svg',
-      d:'i-play-rocky.html',
-      tr:'https://www.youtube.com/results?search_query=I+Play+Rocky+2026+official+trailer',
-      rd:'November 13, 2026',
-      sec:'upcoming'
+   g:'Biography / Sport',
+   c:'Upcoming Biography Sport',
+   p:'i-play-rocky-poster.svg',
+   d:'i-play-rocky.html',
+   tr:'https://www.youtube.com/results?search_query=I+Play+Rocky+2026+official+trailer',
+   rd:'November 13, 2026',
+    sec:'upcoming'
    
    },
 {
@@ -504,6 +504,7 @@ window.MOVIES = [
    sec:'upcoming'
 
 },
+  
    {
       t:'Focker-in-Law',
       y:2026,
@@ -526,7 +527,7 @@ window.MOVIES = [
       tr:'https://www.youtube.com/results?search_query=Hexed+2026+official+trailer',
       rd:'November 25, 2026',
       sec:'upcoming'
-   }}
+   }
 
 
    
