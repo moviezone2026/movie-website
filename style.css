@@ -267,13 +267,24 @@ body > header:not(.site-header) p{
   opacity:.25;
 }
 
+
 .card-body{
   padding:14px;
   display:flex;
   flex-direction:column;
   flex:1;
+  min-width:0;
 }
 
+.movie-card{
+  height:100%;
+}
+
+.card-actions{
+  margin-top:auto;
+  display:grid;
+  gap:8px;
+}
 .year-badge{
   font-size:11px;
   color:#ff6b73;
