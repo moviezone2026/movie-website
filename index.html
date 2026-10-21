@@ -362,6 +362,23 @@
     hidden
   >
     No movies match your search.
+
+  <!-- COLLECTION SEARCH RESULTS -->
+  <section class="movie-section" id="collectionResults" hidden>
+
+    <div class="section-heading">
+      <div>
+        <span class="section-kicker">FROM COLLECTIONS</span>
+        <h2>🎞️ Classics, Horror &amp; TV Shows</h2>
+      </div>
+      <span class="section-count" id="collectionCount"></span>
+    </div>
+
+    <div class="movie-grid" id="collectionGrid"></div>
+
+  </section>
+    
+    
   </p>
 
 
@@ -396,6 +413,7 @@
 ========================= -->
 
 <script src="movies.js"></script>
+<script src="collections.js"></script>
 
 
 
@@ -643,6 +661,67 @@ function matchesSearch(movie) {
 
 }
 
+/* =========================
+   COLLECTION SEARCH RESULTS
+========================= */
+
+const collectionItems   = window.COLLECTIONS || [];
+const collectionSection = document.getElementById("collectionResults");
+const collectionGrid    = document.getElementById("collectionGrid");
+const collectionCount   = document.getElementById("collectionCount");
+
+function collectionCard(m) {
+
+  const poster = m.p
+    ? `<img loading="lazy" src="${m.p}" alt="${m.t} poster"
+            onerror="this.classList.add('img-error')">`
+    : `<div style="aspect-ratio:2/3;display:flex;align-items:center;
+                   justify-content:center;text-align:center;padding:18px;
+                   font-weight:800;
+                   background:linear-gradient(160deg,#2a1520,#11131a 60%,#0d1a2b);">
+         ${m.t}
+       </div>`;
+
+  return `
+    <article class="movie-card">
+      ${poster}
+      <div class="card-body">
+        <span class="year-badge">${m.y}</span>
+        <h3>${m.t}</h3>
+        <p>${m.g}</p>
+        <div class="card-actions">
+          <a class="btn primary" href="${m.d || m.w}">View Details</a>
+        </div>
+      </div>
+    </article>
+  `;
+}
+
+function renderCollections() {
+
+  /* Show collection results only while searching */
+
+  if (!query) {
+    collectionSection.hidden = true;
+    collectionGrid.innerHTML = "";
+    return 0;
+  }
+
+  const list = collectionItems.filter(item =>
+    matchesFilter(item) && matchesSearch(item)
+  );
+
+  collectionGrid.innerHTML = list.map(collectionCard).join("");
+
+  collectionCount.textContent =
+    `${list.length} title${list.length === 1 ? "" : "s"}`;
+
+  collectionSection.hidden = list.length === 0;
+
+  return list.length;
+}
+
+  
 
 
 /* =========================
@@ -705,6 +784,8 @@ function render() {
 
   });
 
+  visible += renderCollections();
+  
 
   /* No results */
 
