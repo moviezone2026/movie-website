@@ -1,6 +1,6 @@
 /*
   MovieZone Collections data
-
+ 
   Fields:
     t    = title
     y    = year
@@ -12,17 +12,17 @@
     src  = Internet Archive item identifier  -> plays in the page via archive.org/embed/ID
     yt   = YouTube video ID (11 characters)   -> plays in the page via YouTube embed
     q    = YouTube search text, used for the Trailer button when no 'yt' ID is set yet
-    sec  = 'classic' | 'horror' | 'tv'
-
+    sec  = 'classic' | 'horror' | 'south' | 'tv'
+ 
   To add a new item, copy one block, change the values, and keep the comma between blocks.
 */
-
+ 
 window.COLLECTIONS = [
-
+ 
 /* =========================
    CLASSIC / PUBLIC DOMAIN
 ========================= */
-
+ 
 {
   t: 'The Great Train Robbery',
   d: 'the-great-train-robbery-1903.html',
@@ -34,7 +34,7 @@ window.COLLECTIONS = [
   src: 'TheGreatTrainRobbery_555',
   sec: 'classic'
 },
-
+ 
 {
   t: 'Popeye the Sailor Meets Sindbad the Sailor',
   d: 'popeye-the-sailor-meets-sindbad-the-sailor-1936.html',
@@ -46,7 +46,7 @@ window.COLLECTIONS = [
   src: 'POPEYEMeetsSindbadTheSailor1936',
   sec: 'classic'
 },
-
+ 
 {
   t: 'A Trip to the Moon',
   d: 'a-trip-to-the-moon-1902.html',
@@ -58,7 +58,7 @@ window.COLLECTIONS = [
   src: 'ATripToTheMoonGeorgeMelies',
   sec: 'classic'
 },
-
+ 
 {
   t: 'The Cabinet of Dr. Caligari',
   d: 'the-cabinet-of-dr-caligari-1920.html',
@@ -70,7 +70,7 @@ window.COLLECTIONS = [
   src: 'DasKabinettdesDoktorCaligariTheCabinetofDrCaligari',
   sec: 'classic'
 },
-
+ 
 {
   t: 'The Kid',
   d: 'the-kid-1921.html',
@@ -82,7 +82,7 @@ window.COLLECTIONS = [
   src: 'Brzdac1921',
   sec: 'classic'
 },
-
+ 
 {
   t: 'Nosferatu',
   d: 'nosferatu-1922.html',
@@ -94,7 +94,7 @@ window.COLLECTIONS = [
   src: 'Nosferatu_most_complete_version_93_mins.',
   sec: 'classic'
 },
-
+ 
 {
   t: 'The Phantom of the Opera',
   d: 'the-phantom-of-the-opera-1925.html',
@@ -106,7 +106,7 @@ window.COLLECTIONS = [
   src: 'ThePhantomoftheOpera',
   sec: 'classic'
 },
-
+ 
 {
   t: 'The General',
   d: 'the-general-1926.html',
@@ -118,7 +118,7 @@ window.COLLECTIONS = [
   src: 'TheGeneral1926',
   sec: 'classic'
 },
-
+ 
 {
   t: 'Metropolis',
   d: 'metropolis-1927.html',
@@ -130,7 +130,7 @@ window.COLLECTIONS = [
   src: 'metropolis-1927-english-titles',
   sec: 'classic'
 },
-
+ 
 {
   t: 'His Girl Friday',
   d: 'his-girl-friday-1940.html',
@@ -142,7 +142,7 @@ window.COLLECTIONS = [
   src: 'his_girl_friday',
   sec: 'classic'
 },
-
+ 
 {
   t: 'Plan 9 from Outer Space',
   d: 'plan-9-from-outer-space-1957.html',
@@ -154,7 +154,7 @@ window.COLLECTIONS = [
   src: 'plan-9-from-outer-space',
   sec: 'classic'
 },
-
+ 
 {
   t: 'Carnival of Souls',
   d: 'carnival-of-souls-1962.html',
@@ -166,7 +166,7 @@ window.COLLECTIONS = [
   src: 'CarnivalofSouls',
   sec: 'classic'
 },
-
+ 
 {
   t: 'Charade',
   d: 'charade-1963.html',
@@ -178,7 +178,7 @@ window.COLLECTIONS = [
   src: 'charade-1963-cary-grant-audrey-hepburn-comedy-mystery-romance-thriller-full-movie',
   sec: 'classic'
 },
-
+ 
 {
   t: 'Night of the Living Dead',
   d: 'night-of-the-living-dead-1968.html',
@@ -190,13 +190,13 @@ window.COLLECTIONS = [
   src: 'night_of_the_living_dead_dvd',
   sec: 'classic'
 },
-
-
+ 
+ 
 /* =========================
    HORROR SERIES
    (add the YouTube video ID in yt: '' to enable the in-page trailer)
 ========================= */
-
+ 
 {
   t: 'Stranger Things',
   d: 'stranger-things-2016.html',
@@ -209,7 +209,7 @@ window.COLLECTIONS = [
   q: 'Stranger Things official trailer',
   sec: 'horror'
 },
-
+ 
 {
   t: 'Wednesday',
   d: 'wednesday-2022.html',
@@ -222,7 +222,7 @@ window.COLLECTIONS = [
   q: 'Wednesday Netflix official trailer',
   sec: 'horror'
 },
-
+ 
 {
   t: 'The Haunting of Hill House',
   d: 'the-haunting-of-hill-house-2018.html',
@@ -235,7 +235,7 @@ window.COLLECTIONS = [
   q: 'The Haunting of Hill House official trailer',
   sec: 'horror'
 },
-
+ 
 {
   t: 'Midnight Mass',
   d: 'midnight-mass-2021.html',
@@ -248,7 +248,7 @@ window.COLLECTIONS = [
   q: 'Midnight Mass official trailer',
   sec: 'horror'
 },
-
+ 
 {
   t: 'Supernatural',
   d: 'supernatural-2005.html',
@@ -261,7 +261,7 @@ window.COLLECTIONS = [
   q: 'Supernatural official trailer',
   sec: 'horror'
 },
-
+ 
 {
   t: 'American Horror Story',
   d: 'american-horror-story-2011.html',
@@ -274,7 +274,7 @@ window.COLLECTIONS = [
   q: 'American Horror Story official trailer',
   sec: 'horror'
 },
-
+ 
 {
   t: 'The Walking Dead',
   d: 'the-walking-dead-2010.html',
@@ -287,7 +287,7 @@ window.COLLECTIONS = [
   q: 'The Walking Dead official trailer',
   sec: 'horror'
 },
-
+ 
 {
   t: 'Penny Dreadful',
   d: 'penny-dreadful-2014.html',
@@ -300,7 +300,7 @@ window.COLLECTIONS = [
   q: 'Penny Dreadful official trailer',
   sec: 'horror'
 },
-
+ 
 {
   t: 'Hannibal',
   d: 'hannibal-2013.html',
@@ -313,7 +313,7 @@ window.COLLECTIONS = [
   q: 'Hannibal TV series official trailer',
   sec: 'horror'
 },
-
+ 
 {
   t: 'The Twilight Zone',
   d: 'the-twilight-zone-1959.html',
@@ -326,12 +326,233 @@ window.COLLECTIONS = [
   q: 'The Twilight Zone 1959 official',
   sec: 'horror'
 },
-
-
+ 
+ 
+/* =========================
+   SOUTH HORROR MOVIES
+   (trailers & details only - add poster in p: and YouTube ID in yt: when you have them)
+========================= */
+ 
+{
+  t: 'Manichitrathazhu',
+  y: 1993,
+  g: 'Malayalam / Psychological Horror',
+  c: 'Horror South Malayalam Horror',
+  p: '',
+  w: 'https://en.wikipedia.org/wiki/Manichitrathazhu',
+  yt: '',
+  q: 'Manichitrathazhu 1993 official trailer',
+  sec: 'south'
+},
+ 
+{
+  t: 'Chandramukhi',
+  y: 2005,
+  g: 'Tamil / Horror Comedy',
+  c: 'Horror South Tamil Horror',
+  p: '',
+  w: 'https://en.wikipedia.org/wiki/Chandramukhi',
+  yt: '',
+  q: 'Chandramukhi 2005 trailer',
+  sec: 'south'
+},
+ 
+{
+  t: 'Arundhati',
+  y: 2009,
+  g: 'Telugu / Supernatural Horror',
+  c: 'Horror South Telugu Horror',
+  p: '',
+  w: 'https://en.wikipedia.org/wiki/Arundhati_(2009_film)',
+  yt: '',
+  q: 'Arundhati 2009 trailer',
+  sec: 'south'
+},
+ 
+{
+  t: 'Kanchana (Muni 2)',
+  y: 2011,
+  g: 'Tamil / Horror Comedy',
+  c: 'Horror South Tamil Horror',
+  p: '',
+  w: 'https://en.wikipedia.org/wiki/Kanchana_(2011_film)',
+  yt: '',
+  q: 'Kanchana Muni 2 official trailer',
+  sec: 'south'
+},
+ 
+{
+  t: 'Pizza',
+  y: 2012,
+  g: 'Tamil / Horror Thriller',
+  c: 'Horror South Tamil Horror',
+  p: '',
+  w: 'https://en.wikipedia.org/wiki/Pizza_(2012_film)',
+  yt: '',
+  q: 'Pizza 2012 Tamil official trailer',
+  sec: 'south'
+},
+ 
+{
+  t: 'Pisaasu',
+  y: 2014,
+  g: 'Tamil / Horror Drama',
+  c: 'Horror South Tamil Horror',
+  p: '',
+  w: 'https://en.wikipedia.org/wiki/Pisaasu',
+  yt: '',
+  q: 'Pisaasu official trailer',
+  sec: 'south'
+},
+ 
+{
+  t: 'Aranmanai',
+  y: 2014,
+  g: 'Tamil / Horror Comedy',
+  c: 'Horror South Tamil Horror',
+  p: '',
+  w: 'https://en.wikipedia.org/w/index.php?search=Aranmanai+2014+film',
+  yt: '',
+  q: 'Aranmanai 2014 official trailer',
+  sec: 'south'
+},
+ 
+{
+  t: 'Demonte Colony',
+  y: 2015,
+  g: 'Tamil / Horror Thriller',
+  c: 'Horror South Tamil Horror',
+  p: '',
+  w: 'https://en.wikipedia.org/wiki/Demonte_Colony',
+  yt: '',
+  q: 'Demonte Colony official trailer',
+  sec: 'south'
+},
+ 
+{
+  t: 'Maya',
+  y: 2015,
+  g: 'Tamil / Horror Thriller',
+  c: 'Horror South Tamil Horror',
+  p: '',
+  w: 'https://en.wikipedia.org/w/index.php?search=Maya+2015+Tamil+film',
+  yt: '',
+  q: 'Maya 2015 Tamil official trailer',
+  sec: 'south'
+},
+ 
+{
+  t: 'Raju Gari Gadhi',
+  y: 2015,
+  g: 'Telugu / Horror Comedy',
+  c: 'Horror South Telugu Horror',
+  p: '',
+  w: 'https://en.wikipedia.org/wiki/Raju_Gari_Gadhi',
+  yt: '',
+  q: 'Raju Gari Gadhi official trailer',
+  sec: 'south'
+},
+ 
+{
+  t: 'Pretham',
+  y: 2016,
+  g: 'Malayalam / Horror Comedy',
+  c: 'Horror South Malayalam Horror',
+  p: '',
+  w: 'https://en.wikipedia.org/w/index.php?search=Pretham+2016+Malayalam+film',
+  yt: '',
+  q: 'Pretham 2016 official trailer',
+  sec: 'south'
+},
+ 
+{
+  t: 'Ezra',
+  y: 2017,
+  g: 'Malayalam / Supernatural Horror',
+  c: 'Horror South Malayalam Horror',
+  p: '',
+  w: 'https://en.wikipedia.org/wiki/Ezra_(film)',
+  yt: '',
+  q: 'Ezra Malayalam official trailer',
+  sec: 'south'
+},
+ 
+{
+  t: 'Aval',
+  y: 2017,
+  g: 'Tamil / Horror Thriller',
+  c: 'Horror South Tamil Horror',
+  p: '',
+  w: 'https://en.wikipedia.org/w/index.php?search=Aval+2017+film',
+  yt: '',
+  q: 'Aval 2017 Tamil official trailer',
+  sec: 'south'
+},
+ 
+{
+  t: 'Anando Brahma',
+  y: 2017,
+  g: 'Telugu / Horror Comedy',
+  c: 'Horror South Telugu Horror',
+  p: '',
+  w: 'https://en.wikipedia.org/wiki/Anando_Brahma',
+  yt: '',
+  q: 'Anando Brahma official trailer',
+  sec: 'south'
+},
+ 
+{
+  t: 'Bhoothakaalam',
+  y: 2022,
+  g: 'Malayalam / Psychological Horror',
+  c: 'Horror South Malayalam Horror',
+  p: '',
+  w: 'https://en.wikipedia.org/wiki/Bhoothakaalam',
+  yt: '',
+  q: 'Bhoothakaalam official trailer',
+  sec: 'south'
+},
+ 
+{
+  t: 'Bramayugam',
+  y: 2024,
+  g: 'Malayalam / Horror Thriller',
+  c: 'Horror South Malayalam Horror',
+  p: '',
+  w: 'https://en.wikipedia.org/wiki/Bramayugam',
+  yt: '',
+  q: 'Bramayugam official trailer',
+  sec: 'south'
+},
+ 
+{
+  t: 'Aranmanai 4',
+  y: 2024,
+  g: 'Tamil / Horror Comedy',
+  c: 'Horror South Tamil Horror',
+  p: '',
+  w: 'https://en.wikipedia.org/wiki/Aranmanai_4',
+  yt: '',
+  q: 'Aranmanai 4 official trailer',
+  sec: 'south'
+},
+ 
+{
+  t: 'Demonte Colony 2',
+  y: 2024,
+  g: 'Tamil / Horror Thriller',
+  c: 'Horror South Tamil Horror',
+  p: '',
+  w: 'https://en.wikipedia.org/wiki/Demonte_Colony_2',
+  yt: '',
+  q: 'Demonte Colony 2 official trailer',
+  sec: 'south'
+},
+ 
 /* =========================
    TV SHOWS
 ========================= */
-
+ 
 {
   t: 'Breaking Bad',
   d: 'breaking-bad-2008.html',
@@ -344,7 +565,7 @@ window.COLLECTIONS = [
   q: 'Breaking Bad official trailer',
   sec: 'tv'
 },
-
+ 
 {
   t: 'Game of Thrones',
   d: 'game-of-thrones-2011.html',
@@ -357,7 +578,7 @@ window.COLLECTIONS = [
   q: 'Game of Thrones official trailer',
   sec: 'tv'
 },
-
+ 
 {
   t: 'Money Heist',
   d: 'money-heist-2017.html',
@@ -370,7 +591,7 @@ window.COLLECTIONS = [
   q: 'Money Heist official trailer',
   sec: 'tv'
 },
-
+ 
 {
   t: 'Squid Game',
   d: 'squid-game-2021.html',
@@ -383,7 +604,7 @@ window.COLLECTIONS = [
   q: 'Squid Game official trailer',
   sec: 'tv'
 },
-
+ 
 {
   t: 'Sherlock',
   d: 'sherlock-2010.html',
@@ -396,7 +617,7 @@ window.COLLECTIONS = [
   q: 'Sherlock BBC official trailer',
   sec: 'tv'
 },
-
+ 
 {
   t: 'Peaky Blinders',
   d: 'peaky-blinders-2013.html',
@@ -409,7 +630,7 @@ window.COLLECTIONS = [
   q: 'Peaky Blinders official trailer',
   sec: 'tv'
 },
-
+ 
 {
   t: 'Friends',
   d: 'friends-1994.html',
@@ -422,7 +643,7 @@ window.COLLECTIONS = [
   q: 'Friends official promo',
   sec: 'tv'
 },
-
+ 
 {
   t: 'The Office (US)',
   d: 'the-office-us-2005.html',
@@ -435,7 +656,7 @@ window.COLLECTIONS = [
   q: 'The Office US official trailer',
   sec: 'tv'
 },
-
+ 
 {
   t: 'Doctor Who',
   d: 'doctor-who-1963.html',
@@ -448,7 +669,7 @@ window.COLLECTIONS = [
   q: 'Doctor Who official trailer',
   sec: 'tv'
 },
-
+ 
 {
   t: 'Mr. Bean',
   d: 'mr-bean-1990.html',
@@ -461,7 +682,7 @@ window.COLLECTIONS = [
   q: 'Mr Bean official channel',
   sec: 'tv'
 },
-
+ 
 {
   t: 'Planet Earth',
   d: 'planet-earth-2006.html',
@@ -474,5 +695,5 @@ window.COLLECTIONS = [
   q: 'Planet Earth BBC Earth official',
   sec: 'tv'
 }
-
+ 
 ];
