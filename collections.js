@@ -335,6 +335,7 @@ window.COLLECTIONS = [
  
 {
   t: 'Manichitrathazhu',
+  d: 'manichitrathazhu-1993.html',
   y: 1993,
   g: 'Malayalam / Psychological Horror',
   c: 'Horror South Malayalam Horror',
@@ -347,6 +348,7 @@ window.COLLECTIONS = [
  
 {
   t: 'Chandramukhi',
+  d: 'chandramukhi-2005.html',
   y: 2005,
   g: 'Tamil / Horror Comedy',
   c: 'Horror South Tamil Horror',
@@ -359,6 +361,7 @@ window.COLLECTIONS = [
  
 {
   t: 'Arundhati',
+  d: 'arundhati-2009.html',
   y: 2009,
   g: 'Telugu / Supernatural Horror',
   c: 'Horror South Telugu Horror',
@@ -371,6 +374,7 @@ window.COLLECTIONS = [
  
 {
   t: 'Kanchana (Muni 2)',
+  d: 'kanchana-muni-2-2011.html',
   y: 2011,
   g: 'Tamil / Horror Comedy',
   c: 'Horror South Tamil Horror',
@@ -383,6 +387,7 @@ window.COLLECTIONS = [
  
 {
   t: 'Pizza',
+  d: 'pizza-2012.html',
   y: 2012,
   g: 'Tamil / Horror Thriller',
   c: 'Horror South Tamil Horror',
@@ -395,6 +400,7 @@ window.COLLECTIONS = [
  
 {
   t: 'Pisaasu',
+  d: 'pisaasu-2014.html',
   y: 2014,
   g: 'Tamil / Horror Drama',
   c: 'Horror South Tamil Horror',
@@ -407,6 +413,7 @@ window.COLLECTIONS = [
  
 {
   t: 'Aranmanai',
+  d: 'aranmanai-2014.html',
   y: 2014,
   g: 'Tamil / Horror Comedy',
   c: 'Horror South Tamil Horror',
@@ -419,6 +426,7 @@ window.COLLECTIONS = [
  
 {
   t: 'Demonte Colony',
+  d: 'demonte-colony-2015.html',
   y: 2015,
   g: 'Tamil / Horror Thriller',
   c: 'Horror South Tamil Horror',
@@ -431,6 +439,7 @@ window.COLLECTIONS = [
  
 {
   t: 'Maya',
+  d: 'maya-2015.html',
   y: 2015,
   g: 'Tamil / Horror Thriller',
   c: 'Horror South Tamil Horror',
@@ -443,6 +452,7 @@ window.COLLECTIONS = [
  
 {
   t: 'Raju Gari Gadhi',
+  d: 'raju-gari-gadhi-2015.html',
   y: 2015,
   g: 'Telugu / Horror Comedy',
   c: 'Horror South Telugu Horror',
@@ -455,6 +465,7 @@ window.COLLECTIONS = [
  
 {
   t: 'Pretham',
+  d: 'pretham-2016.html',
   y: 2016,
   g: 'Malayalam / Horror Comedy',
   c: 'Horror South Malayalam Horror',
@@ -467,6 +478,7 @@ window.COLLECTIONS = [
  
 {
   t: 'Ezra',
+  d: 'ezra-2017.html',
   y: 2017,
   g: 'Malayalam / Supernatural Horror',
   c: 'Horror South Malayalam Horror',
@@ -479,6 +491,7 @@ window.COLLECTIONS = [
  
 {
   t: 'Aval',
+  d: 'aval-2017.html',
   y: 2017,
   g: 'Tamil / Horror Thriller',
   c: 'Horror South Tamil Horror',
@@ -491,6 +504,7 @@ window.COLLECTIONS = [
  
 {
   t: 'Anando Brahma',
+  d: 'anando-brahma-2017.html',
   y: 2017,
   g: 'Telugu / Horror Comedy',
   c: 'Horror South Telugu Horror',
@@ -503,6 +517,7 @@ window.COLLECTIONS = [
  
 {
   t: 'Bhoothakaalam',
+  d: 'bhoothakaalam-2022.html',
   y: 2022,
   g: 'Malayalam / Psychological Horror',
   c: 'Horror South Malayalam Horror',
@@ -515,6 +530,7 @@ window.COLLECTIONS = [
  
 {
   t: 'Bramayugam',
+  d: 'bramayugam-2024.html',
   y: 2024,
   g: 'Malayalam / Horror Thriller',
   c: 'Horror South Malayalam Horror',
@@ -527,6 +543,7 @@ window.COLLECTIONS = [
  
 {
   t: 'Aranmanai 4',
+  d: 'aranmanai-4-2024.html',
   y: 2024,
   g: 'Tamil / Horror Comedy',
   c: 'Horror South Tamil Horror',
@@ -539,6 +556,7 @@ window.COLLECTIONS = [
  
 {
   t: 'Demonte Colony 2',
+  d: 'demonte-colony-2-2024.html',
   y: 2024,
   g: 'Tamil / Horror Thriller',
   c: 'Horror South Tamil Horror',
@@ -697,3 +715,4 @@ window.COLLECTIONS = [
 }
  
 ];
+
