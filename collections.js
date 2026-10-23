@@ -339,9 +339,9 @@ window.COLLECTIONS = [
   y: 1993,
   g: 'Malayalam / Psychological Horror',
   c: 'Horror South Malayalam Horror',
-  p: '',
+  p: 'manichitrathazhu-1993.jpg',
   w: 'https://en.wikipedia.org/wiki/Manichitrathazhu',
-  yt: '',
+  yt: 'D5SSyk_jaSE',
   q: 'Manichitrathazhu 1993 official trailer',
   sec: 'south'
 },
@@ -715,4 +715,3 @@ window.COLLECTIONS = [
 }
  
 ];
-
