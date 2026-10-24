@@ -715,3 +715,118 @@ window.COLLECTIONS = [
 }
  
 ];
+
+/* ==========================================
+   MOVIEZONE COLLECTIONS - POSTER FALLBACK
+   Existing collections.js data stays intact
+========================================== */
+
+(function () {
+  "use strict";
+
+  const movies = window.COLLECTIONS || [];
+
+  // Load missing posters from Wikipedia page summaries.
+  async function loadPoster(movie) {
+    if (movie.p) return movie.p;
+
+    if (!movie.w || !movie.w.includes("en.wikipedia.org/wiki/")) {
+      return "";
+    }
+
+    try {
+      const pageTitle = decodeURIComponent(
+        movie.w.split("/wiki/")[1].split("#")[0]
+      );
+
+      const response = await fetch(
+        "https://en.wikipedia.org/api/rest_v1/page/summary/" +
+          encodeURIComponent(pageTitle.replace(/_/g, " ")),
+        { headers: { Accept: "application/json" } }
+      );
+
+      if (!response.ok) return "";
+
+      const data = await response.json();
+      return data.thumbnail?.source || data.originalimage?.source || "";
+    } catch (error) {
+      console.warn("Poster could not load:", movie.t, error);
+      return "";
+    }
+  }
+
+  // Find the existing card by its title and update its poster.
+  async function updateMissingPosters() {
+    const cards = document.querySelectorAll(".movie-card");
+
+    for (const card of cards) {
+      const titleElement = card.querySelector("h3");
+      const posterElement = card.querySelector(
+        "img, .poster-ph"
+      );
+
+      if (!titleElement || !posterElement) continue;
+
+      const title = titleElement.textContent.trim();
+      const movie = movies.find((item) => item.t === title);
+
+      if (!movie) continue;
+
+      // Keep working posters unchanged.
+      if (posterElement.tagName === "IMG" &&
+          posterElement.getAttribute("src")) {
+        continue;
+      }
+
+      if (posterElement.dataset.posterLoading === "true") continue;
+      posterElement.dataset.posterLoading = "true";
+
+      const posterUrl = await loadPoster(movie);
+
+      if (!posterUrl) continue;
+
+      const image = document.createElement("img");
+      image.src = posterUrl;
+      image.alt = title + " poster";
+      image.loading = "lazy";
+      image.referrerPolicy = "no-referrer";
+
+      image.onerror = function () {
+        this.replaceWith(posterElement);
+      };
+
+      posterElement.replaceWith(image);
+    }
+  }
+
+  // Cards may render after this script starts.
+  function startPosterLoader() {
+    updateMissingPosters();
+
+    const grids = document.querySelectorAll(".movie-grid");
+
+    if (!grids.length) {
+      setTimeout(startPosterLoader, 500);
+      return;
+    }
+
+    const observer = new MutationObserver(() => {
+      updateMissingPosters();
+    });
+
+    grids.forEach((grid) => {
+      observer.observe(grid, {
+        childList: true,
+        subtree: true
+      });
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", startPosterLoader);
+  } else {
+    startPosterLoader();
+  }
+})();
+
+
