@@ -1,195 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
- 
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
 <title>Movie Collections | MovieZone</title>
- 
 <link rel="canonical" href="https://moviezone2026.github.io/movie-website/collections.html" />
- 
-<meta
-  name="description"
-  content="Explore classic public domain films, horror series and TV shows with posters, trailers and details on MovieZone."
->
+<meta name="description" content="Explore classic public domain films, horror series and TV shows with posters, trailers and details on MovieZone.">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#111111">
- 
 <link rel="stylesheet" href="style.css">
- 
+
 <style>
-/* Collections-only additions (the main look comes from style.css) */
- 
-.page-hero{
-  max-width:var(--max);
-  margin:auto;
-  padding:50px 22px 20px;
-}
- 
-.page-hero h1{
-  font-size:clamp(34px,6vw,60px);
-  line-height:1.05;
-  margin:10px 0 14px;
-}
- 
-.page-hero p{
-  color:var(--muted);
-  max-width:700px;
-  font-size:17px;
-  margin:0;
-}
- 
-.poster-ph{
-  width:100%;
-  aspect-ratio:2/3;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  padding:18px;
-  font-weight:800;
-  font-size:18px;
-  line-height:1.25;
-  color:#fff;
-  background:linear-gradient(160deg,#2a1520,#11131a 60%,#0d1a2b);
-}
- 
-.btn{
-  cursor:pointer;
-  font-family:inherit;
-  border:0;
-  color:#fff;
-}
- 
-.btn.primary,
-.btn.secondary{
-  display:block;
-}
- 
-.btn.source{
-  display:block;
-  background:transparent;
-  border:1px solid #343948;
-  color:#d9dde7;
-}
- 
-.rights-note{
-  max-width:var(--max);
-  margin:0 auto 10px;
-  padding:0 22px;
-  color:var(--muted);
-  font-size:13px;
-}
- 
-.ad-wrap{
-  overflow:hidden;
-}
- 
-/* Player pop-up */
- 
-.player-overlay{
-  position:fixed;
-  inset:0;
-  z-index:999;
-  display:none;
-  align-items:center;
-  justify-content:center;
-  padding:18px;
-  background:rgba(0,0,0,.85);
-}
- 
-.player-overlay.open{
-  display:flex;
-}
- 
-.player-box{
-  width:100%;
-  max-width:980px;
-}
- 
-.player-top{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:12px;
-  margin-bottom:10px;
-}
- 
-.player-top h3{
-  margin:0;
-  font-size:19px;
-}
- 
-.player-close{
-  background:var(--accent);
-  color:#fff;
-  border:0;
-  border-radius:8px;
-  padding:8px 14px;
-  font-weight:800;
-  cursor:pointer;
-}
- 
-.player-frame{
-  position:relative;
-  width:100%;
-  aspect-ratio:16/9;
-  background:#000;
-  border:1px solid var(--line);
-  border-radius:14px;
-  overflow:hidden;
-}
- 
-.player-frame iframe{
-  width:100%;
-  height:100%;
-  border:0;
-  display:block;
-}
- 
-.player-note{
-  margin:10px 0 0;
-  color:var(--muted);
-  font-size:12px;
-}
- 
+.page-hero{max-width:var(--max);margin:auto;padding:50px 22px 20px}
+.page-hero h1{font-size:clamp(34px,6vw,60px);line-height:1.05;margin:10px 0 14px}
+.page-hero p{color:var(--muted);max-width:700px;font-size:17px;margin:0}
+.poster-ph{width:100%;aspect-ratio:2/3;display:flex;align-items:center;justify-content:center;text-align:center;padding:18px;font-weight:800;font-size:18px;line-height:1.25;color:#fff;background:linear-gradient(160deg,#2a1520,#11131a 60%,#0d1a2b)}
+.movie-card > img{width:100%;aspect-ratio:2/3;object-fit:cover;display:block}
+.btn{cursor:pointer;font-family:inherit;border:0;color:#fff}
+.btn.primary,.btn.secondary{display:block}
+.btn.source{display:block;background:transparent;border:1px solid #343948;color:#d9dde7}
+.rights-note{max-width:var(--max);margin:0 auto 10px;padding:0 22px;color:var(--muted);font-size:13px}
+.ad-wrap{overflow:hidden}
+.player-overlay{position:fixed;inset:0;z-index:999;display:none;align-items:center;justify-content:center;padding:18px;background:rgba(0,0,0,.85)}
+.player-overlay.open{display:flex}
+.player-box{width:100%;max-width:980px}
+.player-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}
+.player-top h3{margin:0;font-size:19px}
+.player-close{background:var(--accent);color:#fff;border:0;border-radius:8px;padding:8px 14px;font-weight:800;cursor:pointer}
+.player-frame{position:relative;width:100%;aspect-ratio:16/9;background:#000;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.player-frame iframe{width:100%;height:100%;border:0;display:block}
+.player-note{margin:10px 0 0;color:var(--muted);font-size:12px}
 @media(max-width:700px){
-  .page-hero{
-    padding:34px 16px 10px;
-  }
- 
-  .page-hero p{
-    font-size:15px;
-  }
- 
-  .rights-note{
-    padding:0 16px;
-  }
- 
-  .nav-wrap nav{
-    display:flex;
-    gap:14px;
-    font-size:14px;
-  }
+.page-hero{padding:34px 16px 10px}
+.page-hero p{font-size:15px}
+.rights-note{padding:0 16px}
+.nav-wrap nav{display:flex;gap:14px;font-size:14px}
 }
 </style>
 </head>
- 
+
 <body>
- 
-<!-- =========================
-     HEADER
-========================= -->
- 
 <header class="site-header">
- 
   <div class="nav-wrap">
- 
-    <a class="brand" href="index.html">
-      🎬 <span>MovieZone</span>
-    </a>
- 
+    <a class="brand" href="index.html">🎬 <span>MovieZone</span></a>
     <nav>
       <a href="index.html">Home</a>
       <a href="#classic">Classic</a>
@@ -197,67 +50,33 @@
       <a href="#south">South Horror</a>
       <a href="#tv">TV Shows</a>
     </nav>
- 
   </div>
- 
+
   <div class="page-hero">
- 
     <span class="eyebrow">COLLECTIONS • TRAILERS • DETAILS</span>
- 
     <h1>MovieZone Collections</h1>
- 
-    <p>
-      Classic public domain films, horror series and popular TV shows.
-      Watch right here on the page, no extra tabs needed.
-    </p>
- 
+    <p>Classic public domain films, horror series and popular TV shows. Watch right here on the page, no extra tabs needed.</p>
     <div class="search-wrap">
       <span>⌕</span>
-      <input
-        id="searchInput"
-        type="search"
-        placeholder="Search collections, genres or years..."
-        aria-label="Search collections"
-      >
+      <input id="searchInput" type="search" placeholder="Search collections, genres or years..." aria-label="Search collections">
     </div>
- 
   </div>
- 
 </header>
- 
- 
-<!-- =========================
-     FILTER BAR
-========================= -->
- 
+
 <section class="filter-bar" aria-label="Collection filters">
- 
   <button class="filter-btn active" data-filter="all">All</button>
   <button class="filter-btn" data-filter="classic">Classic Movies</button>
   <button class="filter-btn" data-filter="horror">Horror Series</button>
   <button class="filter-btn" data-filter="south">South Horror</button>
   <button class="filter-btn" data-filter="tv">TV Shows</button>
- 
 </section>
- 
- 
-<!-- =========================
-     ADSTERRA
-========================= -->
- 
+
 <div class="ad-wrap">
- 
-  <!-- Adsterra Native Banner -->
- 
   <script async="async" data-cfasync="false" src="https://bancadeltempoidea.org/21/95614deb5812074f49ea3d6d10241241"></script>
   <div id="container-95614deb5812074f49ea3d6d10241241"></div>
- 
 </div>
- 
+
 <div class="ad-wrap">
- 
-  <!-- Adsterra Banner 728x90 -->
- 
   <script>
     atOptions = {
       'key' : '0effde60f63879ca95811f6e9db026bb',
@@ -268,99 +87,59 @@
     };
   </script>
   <script src="https://bancadeltempoidea.org/22/0effde60f63879ca95811f6e9db026bb"></script>
- 
 </div>
- 
- 
-<!-- =========================
-     MAIN CONTENT
-========================= -->
- 
+
 <main>
- 
   <section class="movie-section" id="classic">
     <div class="section-heading">
-      <div>
-        <span class="section-kicker">PUBLIC DOMAIN</span>
-        <h2>🎞️ Classic Movies</h2>
-      </div>
+      <div><span class="section-kicker">PUBLIC DOMAIN</span><h2>🎞️ Classic Movies</h2></div>
       <span class="section-count" id="classicCount"></span>
     </div>
     <div class="movie-grid" id="classicGrid"></div>
   </section>
- 
+
   <section class="movie-section" id="horror">
     <div class="section-heading">
-      <div>
-        <span class="section-kicker">HORROR &amp; SUPERNATURAL</span>
-        <h2>👻 Horror Series</h2>
-      </div>
+      <div><span class="section-kicker">HORROR &amp; SUPERNATURAL</span><h2>👻 Horror Series</h2></div>
       <span class="section-count" id="horrorCount"></span>
     </div>
     <div class="movie-grid" id="horrorGrid"></div>
   </section>
- 
+
   <section class="movie-section" id="south">
     <div class="section-heading">
-      <div>
-        <span class="section-kicker">TAMIL • MALAYALAM • TELUGU</span>
-        <h2>🪔 South Horror Movies</h2>
-      </div>
+      <div><span class="section-kicker">TAMIL • MALAYALAM • TELUGU</span><h2>🪔 South Horror Movies</h2></div>
       <span class="section-count" id="southCount"></span>
     </div>
     <div class="movie-grid" id="southGrid"></div>
   </section>
- 
+
   <section class="movie-section" id="tv">
     <div class="section-heading">
-      <div>
-        <span class="section-kicker">FAN FAVOURITES</span>
-        <h2>📺 TV Shows</h2>
-      </div>
+      <div><span class="section-kicker">FAN FAVOURITES</span><h2>📺 TV Shows</h2></div>
       <span class="section-count" id="tvCount"></span>
     </div>
     <div class="movie-grid" id="tvGrid"></div>
   </section>
- 
-  <p id="noResults" class="no-results" hidden>
-    No titles match your search.
-  </p>
- 
+
+  <p id="noResults" class="no-results" hidden>No titles match your search.</p>
+
   <p class="rights-note">
-    Classic films are played from the Internet Archive. Public domain status can
-    differ by country and by version (restorations, soundtracks and remasters may
-    still be protected). Series, shows and South Indian films are shown with official trailers and details only.
-    MovieZone does not host copyrighted episodes. Availability varies by country
-    and platform.
+    Classic films are played from the Internet Archive. Public domain status can differ by country and by version. Series, shows and South Indian films are shown with trailers and details only. MovieZone does not host copyrighted episodes.
   </p>
- 
 </main>
- 
- 
-<!-- =========================
-     PLAYER POP-UP
-========================= -->
- 
+
 <div class="player-overlay" id="playerOverlay" aria-hidden="true">
   <div class="player-box" role="dialog" aria-modal="true" aria-labelledby="playerTitle">
- 
     <div class="player-top">
       <h3 id="playerTitle"></h3>
       <button class="player-close" id="playerClose" type="button">✕ Close</button>
     </div>
- 
     <div class="player-frame" id="playerFrame"></div>
- 
     <p class="player-note" id="playerNote"></p>
- 
   </div>
 </div>
- 
- 
-<!-- =========================
-     FOOTER
-========================= -->
- 
+
 <footer>
   <div class="footer-inner">
     <div>
@@ -377,42 +156,25 @@
   </div>
   <p class="copyright">© 2026 MovieZone. All rights reserved.</p>
 </footer>
- 
- 
-<!-- =========================
-     COLLECTION DATABASE
-========================= -->
- 
+
 <script src="collections.js"></script>
- 
- 
-<!-- =========================
-     COLLECTION SYSTEM
-========================= -->
- 
+
 <script>
- 
 const items = window.COLLECTIONS || [];
- 
 const sectionNames = ["classic", "horror", "south", "tv"];
- 
 const grids = {}, counts = {}, sections = {};
- 
+
 sectionNames.forEach(name => {
-  grids[name]    = document.getElementById(name + "Grid");
-  counts[name]   = document.getElementById(name + "Count");
+  grids[name] = document.getElementById(name + "Grid");
+  counts[name] = document.getElementById(name + "Count");
   sections[name] = document.getElementById(name);
 });
- 
+
 const searchInput = document.getElementById("searchInput");
-const noResults   = document.getElementById("noResults");
- 
+const noResults = document.getElementById("noResults");
 let filter = "all";
-let query  = "";
- 
- 
-/* ---------- helpers ---------- */
- 
+let query = "";
+
 function esc(value) {
   return String(value == null ? "" : value)
     .replace(/&/g, "&amp;")
@@ -420,247 +182,197 @@ function esc(value) {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;");
 }
- 
+
 function ytSearchUrl(item) {
   const text = item.q || (item.t + " official trailer");
-  return "https://www.youtube.com/results?search_query=" +
-    encodeURIComponent(text);
+  return "https://www.youtube.com/results?search_query=" + encodeURIComponent(text);
 }
- 
- 
-/* ---------- card ---------- */
- 
+
 function card(m, index) {
- 
   const poster = m.p
-    ? `<img
-         loading="lazy"
-         src="${esc(m.p)}"
-         alt="${esc(m.t)} poster"
-         onerror="this.outerHTML='<div class=&quot;poster-ph&quot;>${esc(m.t).replace(/'/g, "&#39;")}</div>'"
-       >`
-    : `<div class="poster-ph">${esc(m.t)}</div>`;
- 
+    ? `<img loading="lazy" src="${esc(m.p)}" alt="${esc(m.t)} poster"
+         onerror="this.outerHTML='<div class=&quot;poster-ph&quot; data-poster-index=&quot;${index}&quot;>${esc(m.t).replace(/'/g, "&#39;")}</div>'">`
+    : `<div class="poster-ph" data-poster-index="${index}">${esc(m.t)}</div>`;
+
   let playButton = "";
- 
+
   if (m.src) {
-    playButton = `
-      <button class="btn primary" type="button"
-              data-play="${index}">
-        ▶ Watch Now
-      </button>`;
+    playButton = `<button class="btn primary" type="button" data-play="${index}">▶ Watch Now</button>`;
   } else if (m.yt) {
-    playButton = `
-      <button class="btn primary" type="button"
-              data-play="${index}">
-        ▶ Play Trailer
-      </button>`;
+    playButton = `<button class="btn primary" type="button" data-play="${index}">▶ Play Trailer</button>`;
   } else {
-    playButton = `
-      <a class="btn primary"
-         href="${esc(ytSearchUrl(m))}"
-         target="_blank"
-         rel="noopener noreferrer">
-        ▶ Find Trailer
-      </a>`;
+    playButton = `<a class="btn primary" href="${esc(ytSearchUrl(m))}" target="_blank" rel="noopener noreferrer">▶ Find Trailer</a>`;
   }
- 
-  /* Own detail page first (d), Wikipedia (w) only as a fallback */
+
   const details = m.d
-    ? `
-      <a class="btn secondary" href="${esc(m.d)}">
-        View Details
-      </a>`
+    ? `<a class="btn secondary" href="${esc(m.d)}">View Details</a>`
     : m.w
-    ? `
-      <a class="btn secondary"
-         href="${esc(m.w)}"
-         target="_blank"
-         rel="noopener noreferrer">
-        View Details
-      </a>`
+    ? `<a class="btn secondary" href="${esc(m.w)}" target="_blank" rel="noopener noreferrer">View Details</a>`
     : "";
- 
+
   return `
     <article class="movie-card">
- 
       ${poster}
- 
       <div class="card-body">
- 
         <span class="year-badge">${esc(m.y)}</span>
- 
         <h3>${esc(m.t)}</h3>
- 
         <p>${esc(m.g)}</p>
- 
-        <div class="card-actions">
-          ${playButton}
-          ${details}
-        </div>
- 
+        <div class="card-actions">${playButton}${details}</div>
       </div>
- 
-    </article>
-  `;
+    </article>`;
 }
- 
- 
-/* ---------- filter / search ---------- */
- 
+
 function matchesFilter(item) {
   return filter === "all" || item.sec === filter;
 }
- 
+
 function matchesSearch(item) {
   if (!query) return true;
- 
-  return (
-    item.t + " " + item.y + " " + item.g + " " + (item.c || "")
-  ).toLowerCase().includes(query);
+  return (item.t + " " + item.y + " " + item.g + " " + (item.c || ""))
+    .toLowerCase().includes(query);
 }
- 
- 
-/* ---------- render ---------- */
- 
+
 function render() {
- 
   let visible = 0;
- 
+
   sectionNames.forEach(sec => {
- 
     const list = items
       .map((item, index) => ({ item, index }))
-      .filter(entry =>
-        entry.item.sec === sec &&
-        matchesFilter(entry.item) &&
-        matchesSearch(entry.item)
-      );
- 
-    grids[sec].innerHTML =
-      list.map(entry => card(entry.item, entry.index)).join("");
- 
-    counts[sec].textContent =
-      `${list.length} title${list.length === 1 ? "" : "s"}`;
- 
+      .filter(entry => entry.item.sec === sec &&
+        matchesFilter(entry.item) && matchesSearch(entry.item));
+
+    grids[sec].innerHTML = list.map(entry => card(entry.item, entry.index)).join("");
+    counts[sec].textContent = `${list.length} title${list.length === 1 ? "" : "s"}`;
     sections[sec].hidden = list.length === 0;
- 
     visible += list.length;
- 
   });
- 
+
   noResults.hidden = visible !== 0;
+  loadMissingPosters();
 }
- 
- 
+
 document.querySelectorAll(".filter-btn").forEach(button => {
- 
   button.addEventListener("click", () => {
- 
-    document.querySelectorAll(".filter-btn")
-      .forEach(btn => btn.classList.remove("active"));
- 
+    document.querySelectorAll(".filter-btn").forEach(btn => btn.classList.remove("active"));
     button.classList.add("active");
- 
     filter = button.dataset.filter;
- 
     render();
- 
   });
- 
 });
- 
+
 searchInput.addEventListener("input", event => {
   query = event.target.value.trim().toLowerCase();
   render();
 });
- 
- 
-/* ---------- in-page player ---------- */
- 
-const overlay     = document.getElementById("playerOverlay");
+
+const overlay = document.getElementById("playerOverlay");
 const playerFrame = document.getElementById("playerFrame");
 const playerTitle = document.getElementById("playerTitle");
-const playerNote  = document.getElementById("playerNote");
- 
+const playerNote = document.getElementById("playerNote");
+
 function openPlayer(item) {
- 
   let src, note;
- 
+
   if (item.src) {
-    src  = "https://archive.org/embed/" + encodeURIComponent(item.src);
+    src = "https://archive.org/embed/" + encodeURIComponent(item.src);
     note = "Streaming from the Internet Archive. Check rights for your intended use.";
+  } else if (item.yt) {
+    src = "https://www.youtube-nocookie.com/embed/" +
+      encodeURIComponent(item.yt) + "?rel=0&autoplay=1";
+    note = "Trailer played from YouTube.";
   } else {
-    src  = "https://www.youtube-nocookie.com/embed/" +
-           encodeURIComponent(item.yt) + "?rel=0&autoplay=1";
-    note = "Official trailer, played from YouTube.";
+    return;
   }
- 
+
   playerTitle.textContent = item.t + " (" + item.y + ")";
-  playerNote.textContent  = note;
- 
-  playerFrame.innerHTML =
-    `<iframe
-       src="${src}"
-       title="${esc(item.t)}"
-       allow="autoplay; fullscreen; picture-in-picture; encrypted-media"
-       allowfullscreen
-       loading="lazy"
-       referrerpolicy="strict-origin-when-cross-origin"
-     ></iframe>`;
- 
+  playerNote.textContent = note;
+  playerFrame.innerHTML = `<iframe src="${src}" title="${esc(item.t)}"
+    allow="autoplay; fullscreen; picture-in-picture; encrypted-media"
+    allowfullscreen loading="lazy"
+    referrerpolicy="strict-origin-when-cross-origin"></iframe>`;
+
   overlay.classList.add("open");
   overlay.setAttribute("aria-hidden", "false");
   document.body.style.overflow = "hidden";
 }
- 
+
 function closePlayer() {
   overlay.classList.remove("open");
   overlay.setAttribute("aria-hidden", "true");
-  playerFrame.innerHTML = "";   /* stops the video */
+  playerFrame.innerHTML = "";
   document.body.style.overflow = "";
 }
- 
+
 document.addEventListener("click", event => {
- 
   const button = event.target.closest("[data-play]");
- 
+
   if (button) {
     const item = items[Number(button.dataset.play)];
     if (item) openPlayer(item);
     return;
   }
- 
-  if (event.target === overlay) {
-    closePlayer();
-  }
- 
+
+  if (event.target === overlay) closePlayer();
 });
- 
-document.getElementById("playerClose")
-  .addEventListener("click", closePlayer);
- 
+
+document.getElementById("playerClose").addEventListener("click", closePlayer);
+
 document.addEventListener("keydown", event => {
-  if (event.key === "Escape" && overlay.classList.contains("open")) {
-    closePlayer();
-  }
+  if (event.key === "Escape" && overlay.classList.contains("open")) closePlayer();
 });
- 
- 
-/* ---------- start ---------- */
- 
+
+/* Poster fallback: tries Wikipedia thumbnails for blank or broken posters. */
+async function loadMissingPosters() {
+  const placeholders = document.querySelectorAll(".poster-ph[data-poster-index]");
+
+  await Promise.all([...placeholders].map(async node => {
+    const index = Number(node.dataset.posterIndex);
+    const item = items[index];
+    if (!item || !item.w) return;
+
+    try {
+      const pageUrl = new URL(item.w);
+      const path = decodeURIComponent(pageUrl.pathname.replace(/^\/wiki\//, ""));
+      let apiUrl;
+
+      if (pageUrl.pathname === "/w/index.php" || pageUrl.searchParams.has("search")) {
+        const searchText = pageUrl.searchParams.get("search") || item.t;
+        apiUrl = "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=" +
+          encodeURIComponent(searchText) +
+          "&gsrnamespace=0&gsrlimit=1&prop=pageimages&piprop=thumbnail&pithumbsize=500&format=json&origin=*";
+      } else {
+        apiUrl = "https://en.wikipedia.org/api/rest_v1/page/summary/" + encodeURIComponent(path);
+      }
+
+      const response = await fetch(apiUrl, { headers: { "Accept": "application/json" } });
+      if (!response.ok) return;
+
+      const data = await response.json();
+      let imageUrl = data.thumbnail && data.thumbnail.source;
+
+      if (!imageUrl && data.query && data.query.pages) {
+        const page = Object.values(data.query.pages)[0];
+        imageUrl = page && page.thumbnail && page.thumbnail.source;
+      }
+
+      if (!imageUrl || !node.isConnected) return;
+
+      const img = document.createElement("img");
+      img.loading = "lazy";
+      img.alt = item.t + " poster";
+      img.src = imageUrl;
+      img.onerror = () => img.replaceWith(node);
+      node.replaceWith(img);
+    } catch (_) {
+      /* Keep the title placeholder if no thumbnail is available. */
+    }
+  }));
+}
+
 render();
- 
 </script>
- 
- 
-<!-- =========================
-     ADSTERRA (extra scripts)
-========================= -->
- 
+
 <script data-cfasync="false" src="https://aarems.org/1/78f53b5d845e5d98bc2ac3e5cc5afe59"></script>
- 
 <script data-cfasync="false" src="https://bancadeltempoidea.org/14/83039bb1b8423f1b83634dae66d6f4f6"></script>
- 
 </body>
 </html>
