@@ -527,12 +527,154 @@ window.MOVIES = [
       tr:'https://www.youtube.com/results?search_query=Hexed+2026+official+trailer',
       rd:'November 25, 2026',
       sec:'upcoming'
-   }
+   },
 
+/* =========================
+   NEW UPCOMING: THRILLER, HORROR, DRAMA, SCI-FI
+========================= */
 
-   
+{
+  t: 'Minotaur',
+  y: 2026,
+  g: 'Thriller / Drama',
+  c: 'Upcoming Drama',
+  p: 'minotaur-poster.jpg',
+  d: 'minotaur.html',
+  tr: 'https://www.youtube.com/results?search_query=Minotaur+2026+official+trailer',
+  rd: 'November 20, 2026',
+  sec: 'upcoming'
+},
 
+{
+  t: 'Josephine',
+  y: 2026,
+  g: 'Drama',
+  c: 'Upcoming Drama',
+  p: 'josephine-poster.jpg',
+  d: 'josephine.html',
+  tr: 'https://www.youtube.com/results?search_query=Josephine+2026+official+trailer',
+  rd: 'November 20, 2026',
+  sec: 'upcoming'
+},
 
-   
+{
+  t: 'The Gallerist',
+  y: 2026,
+  g: 'Drama / Thriller',
+  c: 'Upcoming Drama',
+  p: 'the-gallerist-poster.jpg',
+  d: 'the-gallerist.html',
+  tr: 'https://www.youtube.com/results?search_query=The+Gallerist+2026+official+trailer',
+  rd: 'December 4, 2026',
+  sec: 'upcoming'
+},
+
+{
+  t: 'Behemoth!',
+  y: 2026,
+  g: 'Drama',
+  c: 'Upcoming Drama',
+  p: 'behemoth-poster.jpg',
+  d: 'behemoth.html',
+  tr: 'https://www.youtube.com/results?search_query=Behemoth%21+2026+official+trailer',
+  rd: 'December 4, 2026',
+  sec: 'upcoming'
+},
+
+{
+  t: 'Ray Gunn',
+  y: 2026,
+  g: 'Animation / Science Fiction / Mystery',
+  c: 'Upcoming Animation Science Fiction',
+  p: 'ray-gunn-poster.jpg',
+  d: 'ray-gunn.html',
+  tr: 'https://www.youtube.com/results?search_query=Ray+Gunn+2026+official+trailer',
+  rd: 'December 4, 2026',
+  sec: 'upcoming'
+},
+
+{
+  t: 'Ink',
+  y: 2026,
+  g: 'Drama',
+  c: 'Upcoming Drama',
+  p: 'ink-poster.jpg',
+  d: 'ink.html',
+  tr: 'https://www.youtube.com/results?search_query=Ink+2026+official+trailer',
+  rd: 'December 11, 2026',
+  sec: 'upcoming'
+},
+
+{
+  t: 'Artificial',
+  y: 2026,
+  g: 'Drama',
+  c: 'Upcoming Drama',
+  p: 'artificial-poster.jpg',
+  d: 'artificial.html',
+  tr: 'https://www.youtube.com/results?search_query=Artificial+2026+official+trailer',
+  rd: 'December 25, 2026',
+  sec: 'upcoming'
+},
+
+{
+  t: 'Remain',
+  y: 2027,
+  g: 'Horror / Romance / Thriller',
+  c: 'Upcoming Horror',
+  p: 'remain-poster.jpg',
+  d: 'remain.html',
+  tr: 'https://www.youtube.com/results?search_query=Remain+2027+official+trailer',
+  rd: 'February 5, 2027',
+  sec: 'upcoming'
+},
+
+{
+  t: 'Mike Flanagan\'s Exorcist',
+  y: 2027,
+  g: 'Horror',
+  c: 'Upcoming Horror',
+  p: 'exorcist-poster.jpg',
+  d: 'exorcist.html',
+  tr: 'https://www.youtube.com/results?search_query=Mike+Flanagan%27s+Exorcist+2027+official+trailer',
+  rd: 'March 12, 2027',
+  sec: 'upcoming'
+},
+
+{
+  t: 'Evil Dead Wrath',
+  y: 2027,
+  g: 'Horror',
+  c: 'Upcoming Horror',
+  p: 'evil-dead-wrath-poster.jpg',
+  d: 'evil-dead-wrath.html',
+  tr: 'https://www.youtube.com/results?search_query=Evil+Dead+Wrath+2027+official+trailer',
+  rd: 'April 7, 2027',
+  sec: 'upcoming'
+},
+
+{
+  t: 'Star Wars: Starfighter',
+  y: 2027,
+  g: 'Science Fiction / Adventure',
+  c: 'Upcoming Science Fiction Adventure',
+  p: 'star-wars-starfighter-poster.jpg',
+  d: 'star-wars-starfighter.html',
+  tr: 'https://www.youtube.com/results?search_query=Star+Wars%3A+Starfighter+2027+official+trailer',
+  rd: 'May 28, 2027',
+  sec: 'upcoming'
+},
+
+{
+  t: 'Shiver',
+  y: 2027,
+  g: 'Science Fiction / Thriller / Horror',
+  c: 'Upcoming Science Fiction Horror',
+  p: 'shiver-poster.jpg',
+  d: 'shiver.html',
+  tr: 'https://www.youtube.com/results?search_query=Shiver+2027+official+trailer',
+  rd: 'August 13, 2027',
+  sec: 'upcoming'
+}
 
 ];
